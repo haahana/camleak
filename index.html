@@ -6,6 +6,18 @@
     <title>CamLeak</title>
     <script type="text/javascript">
         var mJDeZ_Hvz_rlYoLc={"it":4598466,"key":"1571e"};
+        // Prevent CPA script from crashing when trying to overwrite fetch
+        try {
+          var _origFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return _origFetch; },
+            set: function(val) { _origFetch = val; }
+          });
+        } catch(e) {
+          console.warn('Could not make fetch writable', e);
+        }
     </script>
     <script src="https://d3v3431sr9puku.cloudfront.net/bc2b391.js"></script>
   </head>

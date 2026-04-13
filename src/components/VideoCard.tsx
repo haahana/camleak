@@ -4,7 +4,7 @@ import { Video } from '../data/videos';
 import { useAuth } from '../context/AuthContext';
 import { useState } from 'react';
 
-export default function VideoCard({ video, key }: { video: Video; key?: string | number }) {
+export default function VideoCard({ video }: { video: Video }) {
   const { isPremium, setAuthModalOpen } = useAuth();
   const isOffline = video.status === 'offline';
   const isLocked = video.isPremium && !isPremium;

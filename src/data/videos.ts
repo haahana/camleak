@@ -38,18 +38,37 @@ const baseImages = [
   'https://i.postimg.cc/mDsGyr0x/video26.jpg',
   'https://i.postimg.cc/25ppC6jz/video27.jpg',
   'https://i.postimg.cc/cJqqdH1r/video28.jpg',
+  'https://i.postimg.cc/v894yPrn/IMG-20250429-115048.jpg',
+  'https://i.postimg.cc/nV7Xxd43/IMG-20250429-120559.jpg',
+  'https://i.postimg.cc/SQ8n4Z68/IMG-20250429-120645.jpg',
+  'https://i.postimg.cc/y69DKfmZ/IMG-20250429-120717.jpg',
+  'https://i.postimg.cc/Y2gv7X64/IMG-20250429-120808.jpg',
+  'https://i.postimg.cc/mZMP4dYq/IMG-20250509-155342-793.jpg',
+  'https://i.postimg.cc/jqNDT8HG/IMG-20250509-155402-693.jpg',
+  'https://i.postimg.cc/2jv1YHQM/IMG-20250509-155627-009.jpg',
+  'https://i.postimg.cc/bYbZP6x2/IMG-20250509-161828-770.jpg',
+  'https://i.postimg.cc/8kW7GydQ/IMG-20250509-163026-904.jpg',
+  'https://i.postimg.cc/QN5FD6QY/IMG-20250509-163546.jpg',
+  'https://i.postimg.cc/zDWyNdCc/IMG-20250509-163602.jpg',
+  'https://i.postimg.cc/nV7Xxd4R/IMG-20250509-163625.jpg',
+  'https://i.postimg.cc/ZY3Wmf8L/IMG-20250509-163642.jpg',
+  'https://i.postimg.cc/NGTKtN64/IMG-20250509-164609.jpg',
+  'https://i.postimg.cc/v894yPrS/IMG-20250509-170539.jpg',
+  'https://i.postimg.cc/FFcYvPyD/IMG-20250509-170603.jpg',
+  'https://i.postimg.cc/WprdV9Gm/IMG-20250509-170620.jpg',
+  'https://i.postimg.cc/FFcYvPyV/IMG-20250509-170638.jpg',
 ];
 
-// Generate 60 videos deterministically
-export const videos: Video[] = Array.from({ length: 60 }).map((_, i) => {
+// Generate 120 videos deterministically
+export const videos: Video[] = Array.from({ length: 120 }).map((_, i) => {
   const id = String(i + 1);
   const imgIndex = i % baseImages.length;
   
-  // 0-19: Free (20 videos)
-  // 20-49: Premium (30 videos)
-  // 50-59: Offline (10 videos)
-  const isOffline = i >= 50;
-  const isPremium = i >= 20 && i < 50;
+  // 0-39: Free (40 videos)
+  // 40-99: Premium (60 videos)
+  // 100-119: Offline (20 videos)
+  const isOffline = i >= 100;
+  const isPremium = i >= 40 && i < 100;
   
   // Deterministic pseudo-random values based on index
   const viewsNum = 10 + ((i * 37) % 900);

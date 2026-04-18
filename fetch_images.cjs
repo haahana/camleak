@@ -1,25 +1,24 @@
 const https = require('https');
 
 const urls = [
-"https://postimg.cc/WtNN6wfp",
-"https://postimg.cc/CdhhHs68",
-"https://postimg.cc/hhDDb13P",
-"https://postimg.cc/V5ffBWHf",
-"https://postimg.cc/grzzqHBd",
-"https://postimg.cc/PNXXzQFz",
-"https://postimg.cc/7bHHMnQV",
-"https://postimg.cc/QV88kJnJ",
-"https://postimg.cc/4nffbQFJ",
-"https://postimg.cc/RqSSQLbX",
-"https://postimg.cc/Z0bbFxD6",
-"https://postimg.cc/8sppBmnR",
-"https://postimg.cc/RqSSQLbK",
-"https://postimg.cc/Z0bbFxD9",
-"https://postimg.cc/grzzqHBX",
-"https://postimg.cc/rzVVCNYS",
-"https://postimg.cc/xqffy3Fz",
-"https://postimg.cc/0rkkd0Hr",
-"https://postimg.cc/dDssmjSh"
+"https://postimg.cc/Yv4zLzv6",
+"https://postimg.cc/21q7L71d",
+"https://postimg.cc/K1KD3D1n",
+"https://postimg.cc/4YKQHQYV",
+"https://postimg.cc/YvJf6LFN",
+"https://postimg.cc/TKZqV5bJ",
+"https://postimg.cc/pmgYf5jY",
+"https://postimg.cc/5XHSQSX8",
+"https://postimg.cc/zy9SCHhk",
+"https://postimg.cc/WdQ6GqZg",
+"https://postimg.cc/xXWyvNmv",
+"https://postimg.cc/DStdr4Gs",
+"https://postimg.cc/ts1NnNsD",
+"https://postimg.cc/VJSW0WJF",
+"https://postimg.cc/K1drP3Tn",
+"https://postimg.cc/FYfVkVYp",
+"https://postimg.cc/fV3fSfVf",
+"https://postimg.cc/HrJ989r2"
 ];
 
 async function fetchDirectUrl(url) {
